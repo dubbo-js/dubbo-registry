@@ -1,0 +1,59 @@
+{
+  "name": "dubbo-registry",
+  "version": "0.1.0",
+  "description": "dubbo registry client",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "autod": "autod --check",
+    "pkgfiles": "egg-bin pkgfiles --check",
+    "lint": "eslint --ext .js .",
+    "test": "npm run lint && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run autod && npm run pkgfiles && npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubbo-js/dubbo-registry.git"
+  },
+  "keywords": [
+    "dubbo",
+    "registry"
+  ],
+  "author": "gxcsoccer@126.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dubbo-js/dubbo-registry/issues"
+  },
+  "homepage": "https://github.com/dubbo-js/dubbo-registry#readme",
+  "dependencies": {
+    "address": "^1.0.3",
+    "co": "^4.6.0",
+    "dubbo-remoting": "^1.0.0",
+    "is-type-of": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "mz": "^2.6.0",
+    "sdk-base": "^3.2.0",
+    "tcp-base": "^3.0.0",
+    "utility": "^1.12.0"
+  },
+  "devDependencies": {
+    "autod": "^2.9.0",
+    "egg-bin": "^4.2.0",
+    "egg-ci": "^1.8.0",
+    "eslint": "^4.6.0",
+    "eslint-config-egg": "^5.1.0",
+    "pedding": "^1.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "ci": {
+    "version": "6, 8"
+  }
+}
